@@ -18,7 +18,7 @@
                             type="text"
                             class="form-control"
                             placeholder="Enter user full name"
-                        />
+                        >
                         <span class="error">{{ errors[0] }}</span>
                     </ValidationProvider>
                 </div>
@@ -53,7 +53,7 @@
                             type="email"
                             class="form-control"
                             placeholder="Enter email"
-                        />
+                        >
                         <span class="error">{{ errors[0] }}</span>
                     </ValidationProvider>
                 </div>
@@ -70,11 +70,11 @@
                             type="text"
                             class="form-control"
                             placeholder="Enter phone number"
-                        />
+                        >
                         <span class="error">{{ errors[0] }}</span>
                     </ValidationProvider>
                 </div>
-                <input id="userHashId" v-model="userHash" type="hidden" />
+                <input id="userHashId" v-model="userHash" type="hidden">
                 <div class="form-group">
                     <vue-recaptcha
                         :sitekey="recaptchaSiteKey"
@@ -92,7 +92,7 @@
                             id="verifyResponse"
                             v-model="recaptchaResponse"
                             type="hidden"
-                        />
+                        >
                         <span class="error">{{ errors[0] }}</span>
                     </ValidationProvider>
                 </div>
@@ -101,7 +101,7 @@
                 </button>
             </form>
         </ValidationObserver>
-        <br />
+        <br>
     </div>
 </template>
 
